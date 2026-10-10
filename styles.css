@@ -1,10 +1,11 @@
 :root {
-  --cor-fundo: #ffffff;
-  --cor-texto: #1f2630;
-  --cor-texto-suave: #4b5563;
-  --cor-marca: #0f3b63;
-  --cor-marca-clara: #e8eef4;
-  --cor-borda: #e2e5e9;
+  --cor-fundo: #11161c;
+  --cor-fundo-alt: #161c24;
+  --cor-texto: #e7eaee;
+  --cor-texto-suave: #a6b0bc;
+  --cor-marca: #7fb2e5;
+  --cor-marca-clara: #182330;
+  --cor-borda: #2a323c;
   --largura-conteudo: 960px;
 }
 
@@ -83,7 +84,7 @@ body {
 }
 
 .secao-alt {
-  background: #fafbfc;
+  background: var(--cor-fundo-alt);
   border-top: 1px solid var(--cor-borda);
   border-bottom: 1px solid var(--cor-borda);
 }
@@ -123,7 +124,7 @@ body {
 
 .cartao-em-breve {
   color: var(--cor-texto-suave);
-  background: #fafbfc;
+  background: var(--cor-fundo-alt);
   border-style: dashed;
 }
 
