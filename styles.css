@@ -1,0 +1,141 @@
+:root {
+  --cor-fundo: #ffffff;
+  --cor-texto: #1f2630;
+  --cor-texto-suave: #4b5563;
+  --cor-marca: #0f3b63;
+  --cor-marca-clara: #e8eef4;
+  --cor-borda: #e2e5e9;
+  --largura-conteudo: 960px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+.caixa {
+  max-width: var(--largura-conteudo);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topo {
+  border-bottom: 1px solid var(--cor-borda);
+  position: sticky;
+  top: 0;
+  background: var(--cor-fundo);
+  z-index: 10;
+}
+
+.topo-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.marca {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--cor-marca);
+  letter-spacing: 0.02em;
+}
+
+.navegacao a {
+  color: var(--cor-texto-suave);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95rem;
+}
+
+.navegacao a:first-child { margin-left: 0; }
+
+.navegacao a:hover { color: var(--cor-marca); }
+
+.hero {
+  padding: 64px 0 48px;
+  text-align: center;
+  background: var(--cor-marca-clara);
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 2.5rem;
+  color: var(--cor-marca);
+}
+
+.subtitulo {
+  margin: 0;
+  color: var(--cor-texto-suave);
+  font-size: 1.1rem;
+}
+
+.secao {
+  padding: 48px 0;
+}
+
+.secao-alt {
+  background: #fafbfc;
+  border-top: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.secao h2 {
+  margin-top: 0;
+  color: var(--cor-marca);
+  font-size: 1.5rem;
+}
+
+.grade-marcas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.cartao-marca {
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--cor-fundo);
+}
+
+.cartao-marca h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--cor-texto);
+  font-size: 1.1rem;
+}
+
+.cartao-responsavel {
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+  margin-top: 0;
+}
+
+.cartao-em-breve {
+  color: var(--cor-texto-suave);
+  background: #fafbfc;
+  border-style: dashed;
+}
+
+.rodape {
+  padding: 24px 0;
+  border-top: 1px solid var(--cor-borda);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--cor-texto-suave);
+}
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2rem; }
+  .navegacao a { margin-left: 12px; font-size: 0.85rem; }
+}
