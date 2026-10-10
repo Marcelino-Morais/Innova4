@@ -122,6 +122,16 @@ body {
   margin-top: 0;
 }
 
+.cartao-contato {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.cartao-contato a,
+.secao a {
+  color: var(--cor-marca);
+}
+
 .cartao-em-breve {
   color: var(--cor-texto-suave);
   background: var(--cor-fundo-alt);
